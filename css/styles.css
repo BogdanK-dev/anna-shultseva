@@ -216,10 +216,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* ------------------------------------------------------------ кнопки */
 
 .btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 13px 24px;
+  padding: 15px 27px;
   font-family: var(--sans);
   font-size: 0.9375rem;
   font-weight: 600;
@@ -228,26 +229,40 @@ ul { margin: 0; padding: 0; list-style: none; }
   border: 1px solid var(--ink);
   background: var(--ink);
   color: var(--paper);
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.25s ease;
+}
+/* вторая рамка внутри поля — как на печатном приглашении */
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(176, 138, 74, 0.55);
+  pointer-events: none;
+  transition: inset 0.25s ease, border-color 0.25s ease;
 }
 .btn:hover {
   background: #0d1834;
   color: var(--paper);
   transform: translateY(-2px);
 }
+.btn:hover::after { inset: 2px; border-color: rgba(176, 138, 74, 0.9); }
 
 .btn--ghost {
   background: transparent;
   color: var(--ink);
   border-color: var(--rule-strong);
 }
+.btn--ghost::after { border-color: rgba(20, 34, 74, 0.2); }
 .btn--ghost:hover {
   background: var(--tint);
   color: var(--ink);
   border-color: var(--ink);
 }
+.btn--ghost:hover::after { border-color: rgba(176, 138, 74, 0.75); }
 
-.btn--sm { padding: 9px 16px; font-size: 0.8125rem; }
+.btn--sm { padding: 11px 19px; font-size: 0.8125rem; }
+.btn--sm::after { inset: 3px; }
+.btn--sm:hover::after { inset: 2px; }
 
 .btn__arrow { font-size: 1.1em; line-height: 1; }
 
@@ -294,7 +309,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* кнопка внутри навигации: .nav a специфичнее .btn, возвращаем ей свой вид */
 .nav a.btn {
   color: var(--paper);
-  padding: 10px 18px;
+  padding: 11px 20px;
   border: 1px solid var(--ink);
 }
 .nav a.btn:hover {
@@ -342,16 +357,22 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .hero__role {
-  margin-top: 20px;
-  font-size: clamp(0.9375rem, 1.35vw, 1.0625rem);
-  font-weight: 500;
-  color: var(--ink-2);
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-size: clamp(1.0625rem, 1.45vw, 1.22rem);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--ink);
 }
-.hero__role i {
-  font-style: normal;
+.hero__role .sep {
+  display: inline-block;
+  width: 0.72em;
   color: var(--gilt);
-  padding-inline: 9px;
+  margin-inline: 0.5em;
+  transform: translateY(0.04em);
 }
+.hero__role .sep svg { display: block; width: 100%; height: auto; }
 
 .hero__lead {
   margin-top: 22px;
@@ -966,7 +987,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--ink);
   border-color: var(--paper);
 }
+.contacts .btn::after { border-color: rgba(20, 34, 74, 0.28); }
 .contacts .btn:hover { background: var(--gilt); border-color: var(--gilt); color: var(--ink); }
+.contacts .btn:hover::after { border-color: rgba(20, 34, 74, 0.5); }
 
 .footer {
   border-top: 1px solid rgba(246, 239, 228, 0.22);
