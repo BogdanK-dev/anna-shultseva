@@ -1,0 +1,12 @@
+# в репозиторий попадает только то, что нужно сайту
+/*
+!.gitignore
+!index.html
+!README.md
+!css/
+!js/
+!img/
+
+# исходники, не используемые на странице
+img/mendeleev-*.png
+img/ferrero-1.png
