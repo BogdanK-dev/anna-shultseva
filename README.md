@@ -43,5 +43,13 @@ python -m http.server 8123
 
 ## Публикация
 
-Папку целиком можно залить на любой статический хостинг
-(GitHub Pages, Netlify, Vercel, Timeweb) — сборка не нужна.
+Сайт живёт на GitHub Pages: **https://lumeincc.github.io/anna-shultseva/**
+Репозиторий: https://github.com/lumeincc/anna-shultseva
+
+Чтобы обновить сайт после правок:
+
+```bash
+git add -A && git commit -m "правки" && git push
+```
+
+Через 20-40 секунд страница по ссылке обновится сама.
