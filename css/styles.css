@@ -277,7 +277,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   text-decoration: none;
   white-space: nowrap;
 }
-.brand span { color: var(--ink-3); font-size: 0.72em; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--sans); font-weight: 600; margin-left: 10px; }
+.brand span { color: var(--ink-3); font-size: 0.68em; font-family: var(--sans); font-weight: 500; margin-left: 10px; }
 
 .nav { display: flex; align-items: center; gap: 28px; }
 .nav a {
@@ -290,6 +290,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   white-space: nowrap;
 }
 .nav a:hover { color: var(--ink); border-bottom-color: var(--gilt); }
+
+/* кнопка внутри навигации: .nav a специфичнее .btn, возвращаем ей свой вид */
+.nav a.btn {
+  color: var(--paper);
+  padding: 10px 18px;
+  border: 1px solid var(--ink);
+}
+.nav a.btn:hover {
+  color: var(--paper);
+  border-color: #0d1834;
+}
 
 .burger {
   display: none;
@@ -331,14 +342,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .hero__role {
-  margin-top: 22px;
-  font-size: clamp(0.8125rem, 1.4vw, 0.9375rem);
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: clamp(0.9375rem, 1.35vw, 1.0625rem);
+  font-weight: 500;
   color: var(--ink-2);
 }
-.hero__role i { font-style: normal; color: var(--gilt); padding-inline: 8px; }
+.hero__role i {
+  font-style: normal;
+  color: var(--gilt);
+  padding-inline: 9px;
+}
 
 .hero__lead {
   margin-top: 22px;
