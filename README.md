@@ -1,9 +1,9 @@
-<img src=".github/banner.svg" width="100%" alt="Anna Shultseva. Креативный продюсер. Портфолио.">
+<img src=".github/banner.svg" width="100%" alt="Anna Shultseva. Creative producer. Portfolio.">
 
-Сайт-портфолио креативного продюсера Анны Шульцевой.
+Portfolio site for creative producer Anna Shultseva.
 
 **[→ bogdank-dev.github.io/anna-shultseva](https://bogdank-dev.github.io/anna-shultseva/)**
 
-Креативный продакшн, проджект-менеджмент, стратегия. Проекты для СИБУРа, Сбера, Альфа-Банка, билайна, Wildberries, Ferrero Rocher и Skygen AI.
+Creative production, project management, strategy. Work for SIBUR, Sber, Alfa-Bank, beeline, Wildberries, Ferrero Rocher and Skygen AI.
 
-Одна страница. HTML, CSS, JS. Без сборки. GitHub Pages.
+One page. HTML, CSS, JS. No build step. GitHub Pages.
