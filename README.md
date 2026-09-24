@@ -2,7 +2,7 @@
 
 Сайт-портфолио креативного продюсера Анны Шульцевой.
 
-**[→ lumeincc.github.io/anna-shultseva](https://lumeincc.github.io/anna-shultseva/)**
+**[→ bogdank-dev.github.io/anna-shultseva](https://bogdank-dev.github.io/anna-shultseva/)**
 
 Креативный продакшн, проджект-менеджмент, стратегия. Проекты для СИБУРа, Сбера, Альфа-Банка, билайна, Wildberries, Ferrero Rocher и Skygen AI.
 
